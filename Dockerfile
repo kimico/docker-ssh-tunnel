@@ -5,6 +5,7 @@ RUN apk add --update openssh-client && rm -rf /var/cache/apk/*
 
 CMD chmod -R 600 /root/.ssh/* && \
 ssh \
+-p $SSH_PORT \
 -vv \
 -o StrictHostKeyChecking=no \
 -N $TUNNEL_HOST \
