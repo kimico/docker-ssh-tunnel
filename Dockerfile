@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:latest
 MAINTAINER kimico
 
 RUN apk add --update openssh-client && rm -rf /var/cache/apk/*
